@@ -1,0 +1,123 @@
+
+
+//Inicio peticiones - USUARIO
+
+//Peticion get - Usuario para traer todos los usuarios
+get http://localhost:8080/usuarios
+
+//Peticion get - Usuario para traer usuario por id
+
+get http://localhost:8080/usuario/1033
+
+
+//Crear usuario - POST
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "idUsuario": "1034",
+    "nombreUsuario": "Roger",
+    "apellidoUsuario": "Arenas",
+    "correoUsuario": "roger@gmail.com",
+    "passwordUsuario": "1234",
+    "direccionUsuario": "Calle 45",
+    "telefonoUsuario": "3217465839",
+    "tipoUsuario": "admin",
+    "usuarioActivo": "1",
+    "fechaRegistroUsuario": "2025-06-03"
+}
+
+//Login usuario - POST
+POST http://localhost:8080/usuarios/login
+Content-Type: application/json
+
+{
+    "correoUsuario":"roger@gmail.com",
+    "passwordUsuario":"1234"
+}
+
+//Fin peticiones - USUARIO
+
+
+
+
+//Inicio peticiones - LIBRO
+
+//Peticion get - Traer todos los libros
+get http://localhost:8080/libros
+
+//Peticion get - Traer libro por id
+get http://localhost:8080/libros/1
+
+//Peticion post - Crear libro
+POST http://localhost:8080/libros
+Content-Type: application/json
+
+{
+  "tituloLibro": "Cien años de soledad",
+  "descripcionLibro": "Muy solo",
+  "yearPublicacionLibro": 1995,
+  "urlImagenLibro": "url",
+  "stockLibros": 3,
+  "librosDisponibles": 3,
+  "calificacionLibro":4.5,
+  "libroActivo": "1",
+  "idAutor": 1,
+  "idCategoriaLibro": 1
+}
+
+
+//Fin peticiones - LIBRO
+
+
+
+
+
+//Inicio peticiones - AUTOR
+
+//peticion get- traer todos los autores
+get http://localhost:8080/autor
+
+//Peticion POST - crear un autor
+POST http://localhost:8080/autor
+Content-Type: application/json
+
+{
+    "nombreAutor":"Garcia Marquez",
+    "descripcionAutor":"Un autor",
+    "autorActivo":"1"
+}
+
+//Fin peticiones - AUTOR
+
+
+
+
+
+
+//Inicio peticiones - CATEGORIAS
+
+//Peticion POST - crear una categoria de libro
+POST http://localhost:8080/categoriaLibro
+Content-Type: application/json
+
+{
+    "nombreCategoriaLibro":"Suspenso",
+    "descripcionCategoriaLibro":"Terrooooor",
+    "categoriaLibroActivo":"1"
+}
+
+
+POST http://localhost:8080/prestamos
+Content-Type: application/json
+
+{
+    "fechaInicioPrestamo":"2025-02-02",
+    "fechaFinPrestamo":"2025-02-17",
+    "estadoPrestamo":"por recoger",
+    "idUsuario":"1033",
+    "idLibro":"1"
+
+}
+

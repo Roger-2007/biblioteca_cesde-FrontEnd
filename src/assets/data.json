@@ -1,0 +1,207 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "Roger",
+            "email": "roger@gmail.com",
+            "password": "12345678",
+            "rol": "admin"
+        },
+        {
+            "id": 2,
+            "username": "Laura",
+            "email": "laura@gmail.com",
+            "password": "laura1234",
+            "rol": "user"
+        },
+        {
+            "id": 3,
+            "username": "Carlos",
+            "email": "carlos@gmail.com",
+            "password": "1234",
+            "rol": "librarian"
+        },
+        {
+            "id": 4,
+            "username": "Ana",
+            "email": "ana@gmail.com",
+            "password": "1234",
+            "rol": "user"
+        },
+        {
+            "id": 5,
+            "username": "Miguel",
+            "email": "miguel@gmail.com",
+            "password": "miguel4321",
+            "rol": "admin"
+        }
+    ],
+    "books": [
+  {
+    "id": 1,
+    "titulo": "Cien años de soledad",
+    "descripcion": "Una obra maestra de Gabriel García Márquez sobre la familia Buendía en Macondo.",
+    "imagen": "https://m.media-amazon.com/images/I/81af+MCATTL.jpg",
+    "categoria": "Realismo mágico",
+    "calificacion": 4.9,
+    "stock": 20,
+    "autor": "Gabriel García Márquez",
+    "year": 1967
+  },
+  {
+    "id": 2,
+    "titulo": "1984",
+    "descripcion": "Una distopía clásica de George Orwell sobre el control totalitario y la vigilancia.",
+    "imagen": "https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg",
+    "categoria": "Ciencia ficción",
+    "calificacion": 4.8,
+    "stock": 15,
+    "autor": "George Orwell",
+    "year": 1949
+  },
+  {
+    "id": 3,
+    "titulo": "El principito",
+    "descripcion": "Un cuento filosófico y poético sobre la amistad, el amor y la vida.",
+    "imagen": "https://m.media-amazon.com/images/I/81eA+u4z+DL.jpg",
+    "categoria": "Literatura infantil",
+    "calificacion": 4.7,
+    "stock": 25,
+    "autor": "Antoine de Saint-Exupéry",
+    "year": 1943
+  },
+  {
+    "id": 4,
+    "titulo": "La sombra del viento",
+    "descripcion": "Un misterio literario en la Barcelona de la posguerra.",
+    "imagen": "https://m.media-amazon.com/images/I/81b5VwYxHkL.jpg",
+    "categoria": "Misterio",
+    "calificacion": 4.6,
+    "stock": 10,
+    "autor": "Carlos Ruiz Zafón",
+    "year": 2001
+  },
+  {
+    "id": 5,
+    "titulo": "Orgullo y prejuicio",
+    "descripcion": "Una historia de amor y clases sociales en la Inglaterra del siglo XIX.",
+    "imagen": "https://m.media-amazon.com/images/I/81OthjkJBuL.jpg",
+    "categoria": "Romance",
+    "calificacion": 4.5,
+    "stock": 18,
+    "autor": "Jane Austen",
+    "year": 1813
+  },
+  {
+    "id": 6,
+    "titulo": "Sapiens: De animales a dioses",
+    "descripcion": "Una historia de la humanidad desde la prehistoria hasta la era moderna.",
+    "imagen": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
+    "categoria": "Historia / Ensayo",
+    "calificacion": 4.8,
+    "stock": 12,
+    "autor": "Yuval Noah Harari",
+    "year": 2011
+  },
+  {
+    "id": 7,
+    "titulo": "Harry Potter y la piedra filosofal",
+    "descripcion": "La primera entrega de la saga mágica más famosa del mundo.",
+    "imagen": "https://m.media-amazon.com/images/I/81YOuOGFCJL.jpg",
+    "categoria": "Fantasía",
+    "calificacion": 4.9,
+    "stock": 30,
+    "autor": "J.K. Rowling",
+    "year": 1997
+  },
+  {
+    "id": 8,
+    "titulo": "Don Quijote de la Mancha",
+    "descripcion": "La obra maestra de Cervantes sobre un caballero que vive en un mundo imaginario.",
+    "imagen": "https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg",
+    "categoria": "Clásico",
+    "calificacion": 4.6,
+    "stock": 14,
+    "autor": "Miguel de Cervantes",
+    "year": 1605
+  },
+  {
+    "id": 9,
+    "titulo": "Los juegos del hambre",
+    "descripcion": "Katniss Everdeen lucha por sobrevivir en un juego mortal impuesto por el Capitolio.",
+    "imagen": "https://m.media-amazon.com/images/I/61JfGcL2ljL.jpg",
+    "categoria": "Distopía",
+    "calificacion": 4.4,
+    "stock": 22,
+    "autor": "Suzanne Collins",
+    "year": 2008
+  },
+  {
+    "id": 10,
+    "titulo": "El alquimista",
+    "descripcion": "Una fábula espiritual sobre seguir los sueños y encontrar el destino.",
+    "imagen": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+    "categoria": "Ficción espiritual",
+    "calificacion": 4.3,
+    "stock": 17,
+    "autor": "Paulo Coelho",
+    "year": 1988
+  },
+  {
+    "id": 11,
+    "titulo": "Crónica de una muerte anunciada",
+    "descripcion": "Una historia sobre un asesinato anunciado y la indiferencia de un pueblo.",
+    "imagen": "https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg",
+    "categoria": "Realismo mágico",
+    "calificacion": 4.5,
+    "stock": 13,
+    "autor": "Gabriel García Márquez",
+    "year": 1981
+  },
+  {
+    "id": 12,
+    "titulo": "It",
+    "descripcion": "Una novela de terror sobre un ser maligno que aterroriza a un grupo de niños.",
+    "imagen": "https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg",
+    "categoria": "Terror",
+    "calificacion": 4.4,
+    "stock": 9,
+    "autor": "Stephen King",
+    "year": 1986
+  },
+  {
+    "id": 13,
+    "titulo": "El código Da Vinci",
+    "descripcion": "Un thriller de conspiración que combina arte, historia y religión.",
+    "imagen": "https://m.media-amazon.com/images/I/81QJH3fJw-L.jpg",
+    "categoria": "Thriller",
+    "calificacion": 4.2,
+    "stock": 21,
+    "autor": "Dan Brown",
+    "year": 2003
+  },
+  {
+    "id": 14,
+    "titulo": "Los pilares de la Tierra",
+    "descripcion": "Una novela épica sobre la construcción de una catedral en la Edad Media.",
+    "imagen": "https://m.media-amazon.com/images/I/91b0C2YNSrL.jpg",
+    "categoria": "Histórica",
+    "calificacion": 4.7,
+    "stock": 16,
+    "autor": "Ken Follett",
+    "year": 1989
+  },
+  {
+    "id": 15,
+    "titulo": "Rayuela",
+    "descripcion": "Una novela experimental de Julio Cortázar que rompe con la narrativa tradicional.",
+    "imagen": "https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg",
+    "categoria": "Literatura contemporánea",
+    "calificacion": 4.6,
+    "stock": 11,
+    "autor": "Julio Cortázar",
+    "year": 1963
+  }
+]
+
+}

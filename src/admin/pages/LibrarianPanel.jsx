@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import Aside from '../components/Aside'
 import Book from '../../frontend/components/book'
 import { useForm } from 'react-hook-form'
 import { BookContext } from '../../context/BookContext'

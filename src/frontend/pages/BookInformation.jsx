@@ -8,32 +8,33 @@ import axios from 'axios';
 export default function BookInformation() {
   let { id } = useParams()
   const { libros } = useContext(BookContext)
-  const {user} = useContext(AuthContext)
+  const { user } = useContext(AuthContext)
   let navigate = useNavigate()
   const libro = libros.find((libro) => libro.idLibro == id);
- 
-  let reservarLibro = async (data) => {
-    if (!user){
-      alert("Debes iniciar sesion primero!")
-    }else{
-    let datosPrestamo = {
-      "fechaInicioPrestamo": "",
-      "fechaFinPrestamo": "",
-      "estadoPrestamo": "por recoger",
-      "idUsuario": user.idUsuario,
-      "idLibro": libro.idLibro
 
-    }
-    try {
-       let response = await axios.post("http://localhost:8080/prestamos",datosPrestamo,{
-      headers:{
-        "Content-Type":"application/json"
+  let reservarLibro = async (data) => {
+    if (!user) {
+      alert("Debes iniciar sesion primero!")
+    } else {
+      let datosPrestamo = {
+        "fechaInicioPrestamo": "",
+        "fechaFinPrestamo": "",
+        "estadoPrestamo": "por recoger",
+        "idUsuario": user.idUsuario,
+        "idLibro": libro.idLibro
+
       }
-    })
-    } catch (error) {
-      console.log(error);
+      try {
+        let response = await axios.post("http://localhost:8080/prestamos", datosPrestamo, {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        alert("Libro reservado con exito")
+      } catch (error) {
+        console.log(error);
+      }
     }
-  }
   }
 
 

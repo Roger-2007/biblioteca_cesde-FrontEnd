@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import Book from '../components/book'
+import Book from '../components/Book'
 import Header from '../components/Header'
 import { Link } from 'react-router-dom'
 import { BookContext } from '../../context/BookContext'
